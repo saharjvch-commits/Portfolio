@@ -1,24 +1,32 @@
 # Test Case Prioritization & Revised Test Execution Project
 
 ## 📌 Project Overview
-This project demonstrates a complete QA workflow where test cases were designed,
-initial test execution was planned, test case prioritization techniques were applied,
-and the test execution order was revised based on priority.
+This project demonstrates a complete QA workflow for a **School Management System**, where:
+- Test cases were designed and organized into test suites
+- An initial test execution schedule was prepared
+- **Coverage-based test case prioritization** was applied
+- Test execution order was **revised considering coverage and module dependencies**
 
-This simulates a real-world testing scenario where time and risk drive execution decisions.
+This simulates a real-world QA scenario where **time constraints, coverage, and dependencies** drive execution decisions.
 
 ---
 
 ## 🧩 Application Under Test
-- Application Type: School Management System
+- **Application Type:** School Management System  
+- **Modules Covered:**
+  - Student Authentication
+  - Student Registration
+  - Attendance Management
+  - Fee Payment
 
-
+---
 
 ## 🛠 QA Activities Performed
-- Test case design
-- Initial test execution planning
-- Test case prioritization
-- Revised test execution planning
+- Test case design and test suite creation  
+- Initial test execution scheduling  
+- Coverage-based test case prioritization  
+- Dependency analysis (Authentication as prerequisite)  
+- Revised test execution planning  
 
 ---
 
@@ -26,42 +34,44 @@ This simulates a real-world testing scenario where time and risk drive execution
 
 | Document | Description |
 |--------|-------------|
-| TestCases.md | Test cases created from requirements |
-| TestCase-Prioritization.md | Prioritization using Risk, Coverage, and Requirement approaches |
-| Test-Execution-Report.md | Initial and revised test execution order |
+| **Test Case – School Management System V1.pdf** | Functional test cases organized into test suites |
+| **Test Case Prioritization – School Management System V1.pdf** | Coverage-based prioritization applied to test cases |
+| **Test Execution Schedule.pdf** | Initial and revised execution schedules based on prioritization and dependencies |
 
 ---
 
 ## 🔄 QA Workflow Followed
 
 ### Step 1: Test Case Development
-- Test cases were designed using functional requirements
+- Test cases were created based on functional requirements  
+- Test cases were grouped into logical test suites per module  
 
+### Step 2: Initial Test Execution Schedule
+- Test suites were scheduled in a sequential order  
+- No prioritization was applied at this stage  
 
-### Step 2: Initial Test Execution Plan
-- Test cases were arranged in an initial execution order
-- No prioritization was applied at this stage
+### Step 3: Test Case Prioritization (Coverage-Based)
+- Test cases were prioritized based on **coverage percentage**  
+- Test cases achieving higher coverage were planned for earlier execution  
+- Authentication was identified as a **mandatory dependency** for all other modules  
 
-### Step 3: Test Case Prioritization
-Test cases were prioritized using:
-1. Risk-Based Prioritization
-2. Coverage-Based Prioritization
-3. Requirement-Based Prioritization
-
-### Step 4: Revised Test Execution
-- Final execution order was updated based on the highest priority
-- Critical test cases were executed first
+### Step 4: Revised Test Execution Schedule
+- Authentication test suite executed first due to dependency  
+- Remaining test suites reordered based on coverage impact  
+- Execution plan updated to reflect optimized testing strategy  
 
 ---
 
 ## ✅ Outcome
-- High-risk and critical test cases executed early
-- Improved defect detection effectiveness
-- Optimized testing effort under time constraints
+- Early validation of critical system access (Authentication)  
+- Higher coverage achieved in early test cycles  
+- Optimized execution order under limited time  
+- Improved confidence in system stability  
 
 ---
 
 ## 📈 Key Learnings
-- Importance of test case prioritization in regression cycles
-- How prioritization impacts execution strategy
-- Practical application of ISTQB concepts
+- Importance of coverage-based prioritization in test execution  
+- Handling module dependencies during planning  
+- Practical application of **ISTQB test prioritization concepts**  
+- How prioritization improves testing effectiveness in real projects  
